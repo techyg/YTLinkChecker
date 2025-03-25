@@ -1,5 +1,8 @@
 ### This script is intended for Content Creators to keep track of links in descriptions.
 ### Go to USAGE section at bottom for more information on usage.
+### Be sure to install python libraries: 
+### pip install scrapetube
+### pip install BeautifulSoup
 
 import scrapetube
 import csv
@@ -60,7 +63,7 @@ def scrape_youtube_description(video_url):
         return f"Error: {e}"
 
 
-def scrape_youtube_channel(channel, output_csv):
+def scrape_youtube_channel(channel, output_csv, whitelist_path):
     """Scrape video URLs and descriptions from a YouTube channel and extract links."""
     
     try:
@@ -72,7 +75,7 @@ def scrape_youtube_channel(channel, output_csv):
         print(f"Error retrieving channel data: {e}")
         return
     
-    whitelist = load_whitelist("/Users/greg/src/whitelist.txt")
+    whitelist = load_whitelist(whitelist_path)
     
     with open(output_csv, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
@@ -100,6 +103,7 @@ def scrape_youtube_channel(channel, output_csv):
 ### Open up the CSV file to view links.
 
 
-channel = "<<CHANNEL ID HERE>>"
+channel = "<<REPLACE WITH YOUR CHANNEL ID HERE AS NOTED ABOVE- MUST BE VALID OR YOU WILL GET AN ERROR>>"
 output_csv = "youtube_videos.csv"
-scrape_youtube_channel(channel, output_csv)
+whitelist_path = "/Users/greg/src/YTLinkChecker/whitelist.txt"
+scrape_youtube_channel(channel, output_csv, whitelist_path)
