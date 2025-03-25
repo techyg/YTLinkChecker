@@ -4,6 +4,7 @@ This is a simple Python script that allows you to check links on any given Youtu
 Be sure to install the latest libraries before running:
 
 pip install scrapetube
+
 pip install BeautifulSoup
 
 
