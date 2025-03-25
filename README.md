@@ -1,15 +1,19 @@
 # YTLinkChecker
+This is a simple Python script that allows you to check links on any given Youtube channel. It uses the "scrapetube" python library to do so, and also BeautifulSoup.
 
+Be sure to install the latest libraries before running:
 
-This is a simple Python script that allows you to check links on any given Youtube channel. It uses the "scrapetube" python library to do so.
+pip install scrapetube
+pip install BeautifulSoup
 
-### This script is intended for Content Creators to keep track of links in descriptions.
-### Go to USAGE section at bottom for more information on usage.
 
 # USAGE
-### Set the channel variable to your Youtube Channel ID. Get this by going to studio.youtube.com/channel - the text that follows it ("ABCDakjhasdlfjkhaskjdhJJ39234Qb") is what you use.
-### Set the name of the file you want for the output. 
-### Specify a whitelist of domains that you want to filter out. For example, amzn.to will filter out affiliate links. Put domains you wish to filter out on a separate line.
-### Run the script "python YTLinkChecker.py".
-### Open up the CSV file to view links.
+At the bottom of the script, you will find a few variables you can set.
+
+1. Set the channel variable to your Youtube Channel ID. Get this by going to studio.youtube.com/channel - the text that follows it ("ABCDakjhasdlfjkhaskjdhJJ39234Qb") is what you use.
+2. Set the name of the file you want for the output. 
+3. Specify a whitelist of domains that you want to filter out. For example, amzn.to will filter out affiliate links. Put domains you wish to filter out on a separate line.
+4. Run the script "python YTLinkChecker.py".
+5. Open up the CSV file to view links.
+   
 
