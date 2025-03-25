@@ -10,6 +10,7 @@ pip install BeautifulSoup
 # USAGE
 At the bottom of the script, you will find a few variables you can set.
 
+# IMPORTANT - CHANNEL VARIABLE MUST BE SET. 
 1. Set the channel variable to your Youtube Channel ID. Get this by going to studio.youtube.com/channel - the text that follows it ("ABCDakjhasdlfjkhaskjdhJJ39234Qb") is what you use.
 2. Set the name of the file you want for the output. 
 3. Specify a whitelist of domains that you want to filter out. For example, amzn.to will filter out affiliate links. Put domains you wish to filter out on a separate line.
