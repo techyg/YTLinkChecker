@@ -13,7 +13,7 @@ At the bottom of the script, you will find a few variables you will need to set 
 
 
 # IMPORTANT - CHANNEL VARIABLE MUST BE SET. 
-1. Set the channel variable to your Youtube Channel ID. Get this by going to studio.youtube.com/channel - the text that follows it ("ABCDakjhasdlfjkhaskjdhJJ39234Qb") is what you use. Or, you can find this by going to the "About" and clicking "Share Channel" and then "Copy Channel ID". 
+1. Set the channel variable to your Youtube Channel ID. Get this by going to studio.youtube.com/channel - the text that follows it ("UC6askdjfbadbnasdfkj") is what you use. Or, you can find this by going to the "About" and clicking "Share Channel" and then "Copy Channel ID". 
 2. Set the name of the file you want for the output. 
 3. Specify a whitelist of domains that you want to filter out. For example, amzn.to will filter out affiliate links. Put domains you wish to filter out on a separate line.
 4. Run the script "python YTLinkChecker.py".
@@ -21,8 +21,12 @@ At the bottom of the script, you will find a few variables you will need to set 
 
 # Config/variables you need to set- found at bottom of script:
 
-channel = "UC6askdjfbadbnasdfkj" (this is fake- replace with a valid channel ID)
+channel = "UC6askdjfbadbnasdfkj"
 
 output_csv = "youtube_videos.csv"
 
 whitelist_path = "/Users/greg/src/YTLinkChecker/whitelist.txt"
+
+# Things to know
+
+I've tested this with my channel, which has about 150 videos. It takes about a minute or two to run. The more videos and links you have, the longer it will take.
