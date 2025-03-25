@@ -85,9 +85,11 @@ def scrape_youtube_channel(channel, output_csv, whitelist_path):
             video_id = video["videoId"]
             video_url = f"https://www.youtube.com/watch?v={video['videoId']}"
             title = video["title"]["runs"][0]["text"]
+            print(f"Parsing links for {title}")
             description = scrape_youtube_description(video_url)
             links = extract_links(description, whitelist)
-            
+            countlinks = len(links)
+            print(f"{countlinks} links found")
             # Write each unique link in a separate row
             if links:
                 for link in links:
@@ -103,7 +105,7 @@ def scrape_youtube_channel(channel, output_csv, whitelist_path):
 ### Open up the CSV file to view links.
 
 
-channel = "<<REPLACE WITH YOUR CHANNEL ID HERE AS NOTED ABOVE- MUST BE VALID OR YOU WILL GET AN ERROR>>"
+channel = "ABCDakjhasdlfjkhaskjdhJJ39234Qb"
 output_csv = "youtube_videos.csv"
 whitelist_path = "/Users/greg/src/YTLinkChecker/whitelist.txt"
 scrape_youtube_channel(channel, output_csv, whitelist_path)
