@@ -21,6 +21,7 @@ At the bottom of the script, you will find a few variables you will need to set 
 # Config/variables you need to set- found at bottom of script:
 
 channel = "UC6askdjfbadbnasdfkj" (this is fake- replace with a valid channel ID)
+
 output_csv = "youtube_videos.csv"
+
 whitelist_path = "/Users/greg/src/YTLinkChecker/whitelist.txt"
-scrape_youtube_channel(channel, output_csv, whitelist_path)
