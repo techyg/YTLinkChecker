@@ -29,4 +29,4 @@ whitelist_path = "/Users/greg/src/YTLinkChecker/whitelist.txt"
 
 # Things to know
 
-I've tested this with my channel, which has about 150 videos. It takes about a minute or two to run. The more videos and links you have, the longer it will take.
+I've tested this with my channel, which has about 150 videos. It takes about a minute or two to run. The more videos and links you have, the longer it will take. It will print status information while running. 
